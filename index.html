@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <link rel="shortcut icon" href="assets/quiz.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <div class="poin">
+                <label id="poin">0.0</label>
+            </div>
+            <div class="timer">
+                <label id="m">00</label>
+                :
+                <label id="s">00</label>
+                :
+                <label id="ms">00</label>
+            </div>
+        </header>
+        <div class="progress">
+            <div class="correct bar">
+                <div id="correct" class="value"></div>
+            </div>
+            <div class="wrong bar">
+                <div id="wrong" class="value"></div>
+            </div>
+        </div>
+        <div id="quiz-container" class="container">
+            <div class="col">
+                <div class="number">
+                    <label id="num">1</label>
+                </div>
+            </div>
+            <div id="template" class="col">
+            </div>
+        </div>
+        <div id="result" class="menu container">
+            <div id="main-score" class="big-grid">
+                <span>100</span>
+                <span>/100</span>
+            </div>
+            <div></div>
+            <div id="correct-q" class="right-top-grid">
+                <label>10</label>
+                <span>Benar</span>
+            </div>
+            <div></div>
+            <div></div>
+            <div id="wrong-q" class="right-bottom-grid">
+                <label>0</label>
+                <span>Salah</span>
+            </div>
+            <div id="timer-stat" class="long-grid">
+                <div id="minute">
+                    <label>10</label>
+                    <span>Menit</span>
+                </div>
+                <div id="second">
+                    <label>20</label>
+                    <span>Detik</span>
+                </div>
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="menu" class="menu container">
+            <div id="play" class="big-grid">
+                <span class="grid-btn" onclick="ready(this)">Play</span>
+            </div>
+            <div></div>
+            <div id="help" class="right-top-grid">
+                <span>Add Quiz</span>
+            </div>
+            <div></div>
+            <div></div>
+            <div id="rule" class="right-bottom-grid">
+                <span>Rules</span>
+            </div>
+            <div id="timer-stat" class="long-grid">
+                <span>How To Play</span>
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+[
+    {
+        "id": 1,
+        "question": "Berapakah luas persegi dengan sisi 5 cm?",
+        "options": [
+            10,
+            15,
+            20,
+            25
+        ],
+        "answer": 3
+    },
+    {
+        "id": 2,
+        "question": "Hitunglah keliling lingkaran dengan jari-jari 7 cm. (Gunakan π ≈ 3.14)",
+        "options": [
+            14,
+            21,
+            44,
+            43
+        ],
+        "answer": 2
+    },
+    {
+        "id": 3,
+        "question": "Berapakah volume kubus dengan panjang sisi 6 cm?",
+        "options": [
+            36,
+            72,
+            108,
+            216
+        ],
+        "answer": 3
+    },
+    {
+        "id": 4,
+        "question": "Hitunglah luas segitiga dengan alas 8 cm dan tinggi 6 cm.",
+        "options": [
+            24,
+            28,
+            30,
+            48
+        ],
+        "answer": 0
+    },
+    {
+        "id": 5,
+        "question": "Berapakah volume tabung dengan jari-jari 5 cm dan tinggi 10 cm? (Gunakan π ≈ 3.14)",
+        "options": [
+            157,
+            314,
+            471,
+            785
+        ],
+        "answer": 3
+    },
+    {
+        "id": 6,
+        "question": "Hitunglah hasil dari 3 pangkat 4.",
+        "options": [
+            9,
+            12,
+            27,
+            81
+        ],
+        "answer": 3
+    },
+    {
+        "id": 7,
+        "question": "Berapakah nilai dari f(x) = 2x^2 - 3x + 1 jika x = 4?",
+        "options": [
+            5,
+            11,
+            17,
+            21
+        ],
+        "answer": 3
+    },
+    {
+        "id": 8,
+        "question": "Hitunglah keliling persegi panjang dengan panjang 10 cm dan lebar 5 cm.",
+        "options": [
+            20,
+            30,
+            40,
+            50
+        ],
+        "answer": 1
+    },
+    {
+        "id": 9,
+        "question": "Berapakah volume balok dengan panjang 6 cm, lebar 4 cm, dan tinggi 3 cm?",
+        "options": [
+            36,
+            48,
+            72,
+            96
+        ],
+        "answer": 2
+    },
+    {
+        "id": 10,
+        "question": "Hitunglah luas jajar genjang dengan alas 12 cm dan tinggi 8 cm.",
+        "options": [
+            64,
+            80,
+            96,
+            112
+        ],
+        "answer": 2
+    },
+    {
+        "id": 11,
+        "question": "Berapakah luas permukaan kubus dengan panjang sisi 10 cm?",
+        "options": [
+            200,
+            300,
+            400,
+            600
+        ],
+        "answer": 3
+    },
+    {
+        "id": 12,
+        "question": "Hitunglah hasil dari 5 pangkat 3.",
+        "options": [
+            125,
+            150,
+            175,
+            200
+        ],
+        "answer": 0
+    },
+    {
+        "id": 13,
+        "question": "Berapakah nilai dari f(x) = 3x^2 + 2x - 5 jika x = 2?",
+        "options": [
+            9,
+            11,
+            15,
+            21
+        ],
+        "answer": 1
+    },
+    {
+        "id": 14,
+        "question": "Hitunglah keliling lingkaran dengan jari-jari 10 cm. (Gunakan π ≈ 3.14)",
+        "options": [
+            20,
+            30,
+            40,
+            62.8
+        ],
+        "answer": 3
+    },
+    {
+        "id": 15,
+        "question": "Berapakah volume kerucut dengan jari-jari 6 cm dan tinggi 9 cm? (Gunakan π ≈ 3.14)",
+        "options": [
+            169.56,
+            282.6,
+            339.12,
+            355.5
+        ],
+        "answer": 2
+    },
+    {
+        "id": 16,
+        "question": "Hitunglah luas trapesium dengan panjang sisi sejajar 10 cm dan 15 cm, serta tinggi 8 cm.",
+        "options": [
+            80,
+            100,
+            120,
+            150
+        ],
+        "answer": 1
+    },
+    {
+        "id": 17,
+        "question": "Berapakah nilai dari f(x) = x^2 - 7x + 10 jika x = 5?",
+        "options": [
+            0,
+            3,
+            5,
+            10
+        ],
+        "answer": 0
+    },
+    {
+        "id": 18,
+        "question": "Hitunglah keliling persegi dengan sisi 12 cm.",
+        "options": [
+            24,
+            36,
+            48,
+            60
+        ],
+        "answer": 2
+    },
+    {
+        "id": 19,
+        "question": "Berapakah volume bola dengan jari-jari 4 cm? (Gunakan π ≈ 3.14)",
+        "options": [
+            268.08,
+            301.44,
+            401.92,
+            804.16
+        ],
+        "answer": 0
+    },
+    {
+        "id": 20,
+        "question": "Hitunglah hasil dari 2 pangkat 6.",
+        "options": [
+            8,
+            16,
+            32,
+            64
+        ],
+        "answer": 3
+    }
+]

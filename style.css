@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Montserrat';
+}
+
+.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: calc(650px - 68px);
+}
+
+.progress {
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    width: calc(650px - 68px);
+}
+
+.timer {
+    display: flex;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+}
+
+.timer label {
+    margin-left: 8px;
+    min-width: 24px;
+}
+
+.bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: rgba(101, 149, 255, .1);
+}
+
+.bar .value {
+    position: absolute;
+    transition: .5s;
+    height: 100%;
+    animation: glow .3s linear alternate infinite;
+}
+
+@keyframes glow {
+    to {
+        filter: brightness(1.6);
+        transform: scale(1.05);
+    }
+}
+
+.bar.correct .value {
+    left: 0;
+    width: 0%;
+    background: rgb(101, 127, 245);
+}
+
+.bar.wrong .value {
+    right: 0;
+    width: 0%;
+    background: rgb(255, 100, 100);
+}
+
+.poin {
+    font-weight: 600;
+    color: rgb(101, 127, 245);
+}
+
+#quiz-container {
+    display: none;
+}
+
+.container {
+    display: flex;
+    max-width: 650px;
+    border-radius: 8px;
+    padding: 32px 34px;
+    padding-bottom: 72px;
+    gap: 32px;
+}
+
+.number {
+    display: flex;
+    width: 52px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 3px 3px 15px rgba(0, 50, 150, .07);
+    font-size: 22px;
+    color: rgb(100, 100, 100);
+}
+
+.question {
+    line-height: 34px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+}
+
+.option {
+    display: flex;
+    padding: 12px 14px;
+    padding-left: 0;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    min-width: calc(650px - 150px);
+    background: rgba(101, 149, 255, .25);
+    transition: .3s;
+    cursor: pointer;
+    line-height: 22px;
+    font-size: 18px;
+    color: rgb(101, 127, 245);
+}
+
+.option:active {
+    opacity: .3;
+}
+
+.option label {
+    width: 50px;
+    text-align: center;
+}
+
+.correct.option {
+    opacity: 1 !important;
+}
+
+.wrong.option {
+    opacity: 1 !important;
+    background: rgba(255, 100, 100, .3);
+    color: rgb(255, 100, 100);
+}
+
+.answered.option {
+    pointer-events: none;
+    cursor: context-menu;
+    opacity: .3;
+}
+
+.menu.container {
+    display: none;
+    width: 650px;
+    padding: none;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 125px);
+    grid-template-areas:
+        'a a b'
+        'a a c'
+        'd d d'
+    ;
+    gap: 12px;
+}
+
+#menu.container {
+    display: grid;
+}
+
+.menu.container>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(101, 149, 255, .1);
+    color: rgb(101, 127, 245);
+    border-radius: 5px;
+}
+
+.big-grid {
+    display: flex;
+    grid-area: a;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-grid span:first-child {
+    font-size: 72px;
+}
+
+.big-grid span:last-child {
+    margin-top: 24px;
+    font-size: 32px;
+    color: rgba(101, 149, 255, .6);
+}
+
+.right-top-grid {
+    flex-direction: column;
+    grid-area: b;
+    background: rgb(101, 127, 245) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+.right-bottom-grid {
+    flex-direction: column;
+    grid-area: c;
+}
+
+.right-top-grid label,
+.right-bottom-grid label,
+.long-grid label {
+    font-size: 40px;
+}
+
+.long-grid {
+    display: flex;
+    grid-area: d;
+    gap: 32px;
+}
+
+.long-grid span {
+    color: rgba(101, 149, 255, .6);
+}
+
+.grid-btn {
+    cursor: pointer;
+}
